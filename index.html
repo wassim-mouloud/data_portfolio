@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wassim Mouloud | Data Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>WM<span class="logo-bracket"
+            >/&gt;</span
+          >
+        </a>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Wassim Mouloud</h1>
+          <h2 class="hero-title">
+            <span class="typing-text"></span>
+            <span class="cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            Passionate about transforming data into actionable insights and
+            building intelligent solutions that solve real-world problems.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+          <div class="hero-social">
+            <a
+              href="https://github.com/"
+              target="_blank"
+              class="social-link"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              class="social-link"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="mailto:your.email@example.com"
+              class="social-link"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="code-window">
+            <div class="window-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="window-title">data_scientist.py</span>
+            </div>
+            <pre
+              class="code-content"
+            ><code><span class="keyword">class</span> <span class="class-name">DataScientist</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="param">self</span>):
+        <span class="param">self</span>.name = <span class="string">"Wassim Mouloud"</span>
+        <span class="param">self</span>.role = <span class="string">"Data Science Student"</span>
+        <span class="param">self</span>.skills = [
+            <span class="string">"Machine Learning"</span>,
+            <span class="string">"Data Analysis"</span>,
+            <span class="string">"Python"</span>,
+            <span class="string">"Visualization"</span>
+        ]
+
+    <span class="keyword">def</span> <span class="function">solve_problems</span>(<span class="param">self</span>, data):
+        <span class="keyword">return</span> <span class="param">self</span>.transform(data)</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <p>Scroll Down</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-number">01.</span> About Me
+        </h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a Data Science student with a passion for uncovering insights
+              hidden within data. My journey in data science began with a
+              curiosity about how decisions can be driven by data rather than
+              intuition alone.
+            </p>
+            <p>
+              I specialize in building machine learning models that solve
+              practical business problems, from predicting customer behavior to
+              forecasting trends. I believe in the power of data to transform
+              businesses and improve lives.
+            </p>
+            <p>
+              When I'm not coding or analyzing data, you can find me exploring
+              new technologies, reading about the latest advancements in AI, or
+              working on side projects that challenge my skills.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <div class="stat-info">
+                <span class="stat-number" data-target="2">0</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="stat-info">
+                <span class="stat-number" data-target="5">0</span>
+                <span class="stat-label">Technologies Used</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="stat-info">
+                <span class="stat-number" data-target="3">0</span>
+                <span class="stat-label">ML Models Built</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-number">02.</span> Featured Projects
+        </h2>
+        <div class="projects-grid">
+          <!-- Project 1: Customer Churn Predictor -->
+          <article class="project-card featured">
+            <div class="project-image">
+              <div class="project-preview churn-preview">
+                <div class="preview-header">
+                  <i class="fas fa-users"></i>
+                  <span>Customer Analytics</span>
+                </div>
+                <div class="preview-chart">
+                  <div class="gauge">
+                    <div class="gauge-fill" style="--percentage: 75"></div>
+                    <div class="gauge-center">
+                      <span class="gauge-value">75%</span>
+                      <span class="gauge-label">Churn Risk</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-bars">
+                  <div class="bar" style="--height: 80%"></div>
+                  <div class="bar" style="--height: 60%"></div>
+                  <div class="bar" style="--height: 90%"></div>
+                  <div class="bar" style="--height: 45%"></div>
+                  <div class="bar" style="--height: 70%"></div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://loyaltylogic.streamlit.app/"
+                  target="_blank"
+                  class="overlay-btn"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-label">Machine Learning</div>
+              <h3 class="project-title">
+                LoyaltyLogic - Customer Churn Predictor
+              </h3>
+              <p class="project-description">
+                A machine learning application that predicts customer churn
+                using Random Forest Classification. Features an interactive
+                dark-themed Streamlit interface with dynamic Plotly
+                visualizations, churn probability gauge, risk assessment, and
+                actionable retention recommendations.
+              </p>
+              <ul class="project-features">
+                <li>
+                  <i class="fas fa-check"></i> Random Forest Classifier with
+                  scikit-learn
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Interactive dark-themed Streamlit
+                  interface
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Dynamic Plotly visualizations
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Churn probability gauge & risk
+                  assessment
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Actionable retention
+                  recommendations
+                </li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">Plotly</span>
+                <span class="tech-tag">Random Forest</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://loyaltylogic.streamlit.app/"
+                  target="_blank"
+                  class="project-link primary"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Salary Predictor -->
+          <article class="project-card featured">
+            <div class="project-image">
+              <div class="project-preview salary-preview">
+                <div class="preview-header">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span>Salary Analytics</span>
+                </div>
+                <div class="preview-regression">
+                  <svg viewBox="0 0 200 100" class="regression-chart">
+                    <line x1="20" y1="80" x2="180" y2="80" class="axis" />
+                    <line x1="20" y1="80" x2="20" y2="10" class="axis" />
+                    <circle cx="35" cy="70" r="4" class="data-point" />
+                    <circle cx="55" cy="60" r="4" class="data-point" />
+                    <circle cx="75" cy="55" r="4" class="data-point" />
+                    <circle cx="95" cy="45" r="4" class="data-point" />
+                    <circle cx="115" cy="40" r="4" class="data-point" />
+                    <circle cx="135" cy="30" r="4" class="data-point" />
+                    <circle cx="155" cy="25" r="4" class="data-point" />
+                    <line
+                      x1="30"
+                      y1="75"
+                      x2="165"
+                      y2="20"
+                      class="regression-line"
+                    />
+                  </svg>
+                </div>
+                <div class="preview-metrics">
+                  <div class="metric">
+                    <span class="metric-value">0.89</span>
+                    <span class="metric-label">R² Score</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://worthcheck.streamlit.app/"
+                  target="_blank"
+                  class="overlay-btn"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-label">Machine Learning</div>
+              <h3 class="project-title">WorthCheck - Salary Predictor</h3>
+              <p class="project-description">
+                A machine learning project that predicts salaries using Linear
+                Regression based on years of experience, education level, age,
+                and job role. Features an interactive Streamlit web interface
+                with comprehensive data visualizations and model evaluation
+                metrics.
+              </p>
+              <ul class="project-features">
+                <li>
+                  <i class="fas fa-check"></i> Linear Regression model with
+                  scikit-learn
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Interactive Streamlit web
+                  interface
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Matplotlib & Seaborn
+                  visualizations
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Model metrics: R², RMSE, MAE
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Synthetic dataset generation
+                </li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Linear Regression</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://worthcheck.streamlit.app/"
+                  target="_blank"
+                  class="project-link primary"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-number">03.</span> Skills & Technologies
+        </h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-code"></i>
+              <h3>Programming</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">SQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="75"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-brain"></i>
+              <h3>Machine Learning</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Scikit-learn</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Pandas</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">NumPy</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-chart-bar"></i>
+              <h3>Visualization</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Plotly</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Matplotlib</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Seaborn</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="75"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-tools"></i>
+              <h3>Tools & Frameworks</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Streamlit</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Git</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="75"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Jupyter</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-number">04.</span> Get In Touch
+        </h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+              I'm currently looking for opportunities to apply my data science
+              skills in real-world projects. Whether you have a question, a
+              project idea, or just want to say hi, feel free to reach out!
+            </p>
+            <div class="contact-links">
+              <a href="mailto:your.email@example.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+                <span>your.email@example.com</span>
+              </a>
+              <a
+                href="https://linkedin.com/"
+                target="_blank"
+                class="contact-link"
+              >
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn Profile</span>
+              </a>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="contact-link"
+              >
+                <i class="fab fa-github"></i>
+                <span>GitHub Profile</span>
+              </a>
+            </div>
+          </div>
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="https://formspree.io/f/xkobjaoj"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-text">
+            Designed & Built by <span class="highlight">Wassim Mouloud</span>
+          </p>
+          <div class="footer-social">
+            <a href="https://github.com/" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
