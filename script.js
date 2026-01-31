@@ -1,19 +1,14 @@
-// ============================================
-// Navigation
-// ============================================
 const navbar = document.querySelector('.navbar');
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 
-// Mobile menu toggle
 navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('active');
     navMenu.classList.toggle('active');
     document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
 });
 
-// Close mobile menu when clicking a link
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navToggle.classList.remove('active');
@@ -22,7 +17,6 @@ navLinks.forEach(link => {
     });
 });
 
-// Navbar scroll effect
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
@@ -31,7 +25,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Active nav link on scroll
 const sections = document.querySelectorAll('section[id]');
 
 function highlightNavLink() {
@@ -52,9 +45,6 @@ function highlightNavLink() {
 
 window.addEventListener('scroll', highlightNavLink);
 
-// ============================================
-// Typing Effect
-// ============================================
 const typingText = document.querySelector('.typing-text');
 const phrases = [
     'Data Science Student',
@@ -83,24 +73,20 @@ function typeEffect() {
 
     if (!isDeleting && charIndex === currentPhrase.length) {
         isDeleting = true;
-        typingSpeed = 2000; // Pause before deleting
+        typingSpeed = 2000;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         phraseIndex = (phraseIndex + 1) % phrases.length;
-        typingSpeed = 500; // Pause before typing new phrase
+        typingSpeed = 500;
     }
 
     setTimeout(typeEffect, typingSpeed);
 }
 
-// Start typing effect
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(typeEffect, 1000);
 });
 
-// ============================================
-// Scroll Animations
-// ============================================
 const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -112,7 +98,6 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
 
-            // Animate skill bars
             if (entry.target.classList.contains('skill-category')) {
                 const skillBars = entry.target.querySelectorAll('.skill-progress');
                 skillBars.forEach(bar => {
@@ -123,7 +108,6 @@ const observer = new IntersectionObserver((entries) => {
                 });
             }
 
-            // Animate stat numbers
             if (entry.target.classList.contains('stat-card')) {
                 const statNumber = entry.target.querySelector('.stat-number');
                 if (statNumber && !statNumber.classList.contains('animated')) {
@@ -135,15 +119,11 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements for animation
 document.querySelectorAll('.skill-category, .stat-card, .project-card, .about-text, .contact-info, .contact-form').forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
 });
 
-// ============================================
-// Number Animation
-// ============================================
 function animateNumber(element) {
     const target = parseInt(element.getAttribute('data-target'));
     const duration = 2000;
@@ -163,9 +143,6 @@ function animateNumber(element) {
     updateNumber();
 }
 
-// ============================================
-// Smooth Scroll
-// ============================================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -180,9 +157,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ============================================
-// Contact Form (Formspree)
-// ============================================
 const contactForm = document.getElementById('contact-form');
 
 contactForm.addEventListener('submit', async (e) => {
@@ -191,7 +165,6 @@ contactForm.addEventListener('submit', async (e) => {
     const btn = contactForm.querySelector('.btn');
     const originalText = btn.innerHTML;
 
-    // Show loading state
     btn.innerHTML = '<span>Sending...</span> <i class="fas fa-spinner fa-spin"></i>';
     btn.disabled = true;
 
@@ -205,22 +178,18 @@ contactForm.addEventListener('submit', async (e) => {
         });
 
         if (response.ok) {
-            // Success
             btn.innerHTML = '<span>Message Sent!</span> <i class="fas fa-check"></i>';
             btn.style.background = 'linear-gradient(135deg, #10b981 0%, #06b6d4 100%)';
             contactForm.reset();
         } else {
-            // Error
             btn.innerHTML = '<span>Error! Try again</span> <i class="fas fa-times"></i>';
             btn.style.background = 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)';
         }
     } catch (error) {
-        // Network error
         btn.innerHTML = '<span>Error! Try again</span> <i class="fas fa-times"></i>';
         btn.style.background = 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)';
     }
 
-    // Reset button after delay
     setTimeout(() => {
         btn.innerHTML = originalText;
         btn.style.background = '';
@@ -228,9 +197,6 @@ contactForm.addEventListener('submit', async (e) => {
     }, 3000);
 });
 
-// ============================================
-// Project Card Hover Effects
-// ============================================
 const projectCards = document.querySelectorAll('.project-card');
 
 projectCards.forEach(card => {
@@ -243,9 +209,6 @@ projectCards.forEach(card => {
     });
 });
 
-// ============================================
-// Parallax Effect for Hero
-// ============================================
 const hero = document.querySelector('.hero');
 const codeWindow = document.querySelector('.code-window');
 
@@ -258,22 +221,14 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ============================================
-// Initialize
-// ============================================
 document.addEventListener('DOMContentLoaded', () => {
-    // Add loaded class for initial animations
     document.body.classList.add('loaded');
 
-    // Initialize skill bars at 0
     document.querySelectorAll('.skill-progress').forEach(bar => {
         bar.style.width = '0';
     });
 });
 
-// ============================================
-// Console Easter Egg
-// ============================================
 console.log(`
 %c Wassim Mouloud - Data Science Portfolio
 %c Thanks for checking out my code!
