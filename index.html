@@ -148,7 +148,7 @@
                 <i class="fas fa-project-diagram"></i>
               </div>
               <div class="stat-info">
-                <span class="stat-number" data-target="2">0</span>
+                <span class="stat-number" data-target="4">0</span>
                 <span class="stat-label">Projects Completed</span>
               </div>
             </div>
@@ -183,186 +183,85 @@
         </h2>
         <div class="projects-grid">
           <!-- Project 1: Customer Churn Predictor -->
-          <article class="project-card featured">
-            <div class="project-image">
-              <div class="project-preview churn-preview">
-                <div class="preview-header">
-                  <i class="fas fa-users"></i>
-                  <span>Customer Analytics</span>
-                </div>
-                <div class="preview-chart">
-                  <div class="gauge">
-                    <div class="gauge-fill" style="--percentage: 75"></div>
-                    <div class="gauge-center">
-                      <span class="gauge-value">75%</span>
-                      <span class="gauge-label">Churn Risk</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="preview-bars">
-                  <div class="bar" style="--height: 80%"></div>
-                  <div class="bar" style="--height: 60%"></div>
-                  <div class="bar" style="--height: 90%"></div>
-                  <div class="bar" style="--height: 45%"></div>
-                  <div class="bar" style="--height: 70%"></div>
-                </div>
-              </div>
-              <div class="project-overlay">
-                <a
-                  href="https://loyaltylogic.streamlit.app/"
-                  target="_blank"
-                  class="overlay-btn"
-                >
-                  <i class="fas fa-external-link-alt"></i>
-                  Live Demo
-                </a>
-              </div>
+          <article class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-users"></i>
             </div>
-            <div class="project-content">
-              <div class="project-label">Machine Learning</div>
-              <h3 class="project-title">
-                LoyaltyLogic - Customer Churn Predictor
-              </h3>
-              <p class="project-description">
-                A machine learning application that predicts customer churn
-                using Random Forest Classification. Features an interactive
-                dark-themed Streamlit interface with dynamic Plotly
-                visualizations, churn probability gauge, risk assessment, and
-                actionable retention recommendations.
-              </p>
-              <ul class="project-features">
-                <li>
-                  <i class="fas fa-check"></i> Random Forest Classifier with
-                  scikit-learn
-                </li>
-                <li>
-                  <i class="fas fa-check"></i> Interactive dark-themed Streamlit
-                  interface
-                </li>
-                <li>
-                  <i class="fas fa-check"></i> Dynamic Plotly visualizations
-                </li>
-                <li>
-                  <i class="fas fa-check"></i> Churn probability gauge & risk
-                  assessment
-                </li>
-                <li>
-                  <i class="fas fa-check"></i> Actionable retention
-                  recommendations
-                </li>
-              </ul>
+            <div class="project-info">
+              <span class="project-label">Machine Learning</span>
+              <h3 class="project-title">LoyaltyLogic</h3>
+              <p class="project-desc">Customer churn prediction using Random Forest with interactive visualizations.</p>
               <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Scikit-learn</span>
-                <span class="tech-tag">Streamlit</span>
-                <span class="tech-tag">Plotly</span>
-                <span class="tech-tag">Random Forest</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://loyaltylogic.streamlit.app/"
-                  target="_blank"
-                  class="project-link primary"
-                >
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
+                <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>Streamlit</span>
+                <span>Plotly</span>
               </div>
             </div>
+            <a href="https://loyaltylogic.streamlit.app/" target="_blank" class="project-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </a>
           </article>
 
           <!-- Project 2: Salary Predictor -->
-          <article class="project-card featured">
-            <div class="project-image">
-              <div class="project-preview salary-preview">
-                <div class="preview-header">
-                  <i class="fas fa-dollar-sign"></i>
-                  <span>Salary Analytics</span>
-                </div>
-                <div class="preview-regression">
-                  <svg viewBox="0 0 200 100" class="regression-chart">
-                    <line x1="20" y1="80" x2="180" y2="80" class="axis" />
-                    <line x1="20" y1="80" x2="20" y2="10" class="axis" />
-                    <circle cx="35" cy="70" r="4" class="data-point" />
-                    <circle cx="55" cy="60" r="4" class="data-point" />
-                    <circle cx="75" cy="55" r="4" class="data-point" />
-                    <circle cx="95" cy="45" r="4" class="data-point" />
-                    <circle cx="115" cy="40" r="4" class="data-point" />
-                    <circle cx="135" cy="30" r="4" class="data-point" />
-                    <circle cx="155" cy="25" r="4" class="data-point" />
-                    <line
-                      x1="30"
-                      y1="75"
-                      x2="165"
-                      y2="20"
-                      class="regression-line"
-                    />
-                  </svg>
-                </div>
-                <div class="preview-metrics">
-                  <div class="metric">
-                    <span class="metric-value">0.89</span>
-                    <span class="metric-label">R² Score</span>
-                  </div>
-                </div>
-              </div>
-              <div class="project-overlay">
-                <a
-                  href="https://worthcheck.streamlit.app/"
-                  target="_blank"
-                  class="overlay-btn"
-                >
-                  <i class="fas fa-external-link-alt"></i>
-                  Live Demo
-                </a>
-              </div>
+          <article class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-chart-line"></i>
             </div>
-            <div class="project-content">
-              <div class="project-label">Machine Learning</div>
-              <h3 class="project-title">WorthCheck - Salary Predictor</h3>
-              <p class="project-description">
-                A machine learning project that predicts salaries using Linear
-                Regression based on years of experience, education level, age,
-                and job role. Features an interactive Streamlit web interface
-                with comprehensive data visualizations and model evaluation
-                metrics.
-              </p>
-              <ul class="project-features">
-                <li>
-                  <i class="fas fa-check"></i> Linear Regression model with
-                  scikit-learn
-                </li>
-                <li>
-                  <i class="fas fa-check"></i> Interactive Streamlit web
-                  interface
-                </li>
-                <li>
-                  <i class="fas fa-check"></i> Matplotlib & Seaborn
-                  visualizations
-                </li>
-                <li>
-                  <i class="fas fa-check"></i> Model metrics: R², RMSE, MAE
-                </li>
-                <li>
-                  <i class="fas fa-check"></i> Synthetic dataset generation
-                </li>
-              </ul>
+            <div class="project-info">
+              <span class="project-label">Machine Learning</span>
+              <h3 class="project-title">WorthCheck</h3>
+              <p class="project-desc">Salary prediction using Linear Regression based on experience and education.</p>
               <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Scikit-learn</span>
-                <span class="tech-tag">Streamlit</span>
-                <span class="tech-tag">Matplotlib</span>
-                <span class="tech-tag">Linear Regression</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://worthcheck.streamlit.app/"
-                  target="_blank"
-                  class="project-link primary"
-                >
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
+                <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>Streamlit</span>
+                <span>Matplotlib</span>
               </div>
             </div>
+            <a href="https://worthcheck.streamlit.app/" target="_blank" class="project-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- Project 3: QuarkSphere E-commerce -->
+          <article class="project-card">
+            <div class="project-icon ecom-icon">
+              <i class="fas fa-gem"></i>
+            </div>
+            <div class="project-info">
+              <span class="project-label">Full Stack</span>
+              <h3 class="project-title">QuarkSphere</h3>
+              <p class="project-desc">Luxury e-commerce marketplace for buying and selling high-end products.</p>
+              <div class="project-tech">
+                <span>Next.js</span>
+                <span>Tailwind CSS</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+            <a href="https://www.quarksphere.com/" target="_blank" class="project-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- Project 4: CryptoChat -->
+          <article class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="project-info">
+              <span class="project-label">Full Stack</span>
+              <h3 class="project-title">CryptoChat</h3>
+              <p class="project-desc">AI chatbot for real-time cryptocurrency prices and market insights using CoinGecko API.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>CoinGecko API</span>
+                <span>Railway</span>
+              </div>
+            </div>
+            <a href="https://thriving-liberation-production-8ffc.up.railway.app/" target="_blank" class="project-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </a>
           </article>
         </div>
       </div>
