@@ -1,6 +1,5 @@
 import { CONFIG } from './config.js';
 
-// Project card hover effects
 export function initProjectCardHover() {
     const projectCards = document.querySelectorAll('.project-card');
 
@@ -15,7 +14,6 @@ export function initProjectCardHover() {
     });
 }
 
-// Parallax effect for code window
 export function initParallax() {
     const codeWindow = document.querySelector('.code-window');
 

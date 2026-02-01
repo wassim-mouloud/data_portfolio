@@ -1,13 +1,11 @@
 import { CONFIG } from './config.js';
 
-// DOM Elements
 const navbar = document.querySelector('.navbar');
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section[id]');
 
-// Mobile menu toggle
 export function initMobileMenu() {
     navToggle.addEventListener('click', () => {
         navToggle.classList.toggle('active');
@@ -24,7 +22,6 @@ export function initMobileMenu() {
     });
 }
 
-// Navbar scroll effect
 export function initNavbarScroll() {
     window.addEventListener('scroll', () => {
         if (window.scrollY > CONFIG.navbarScrollThreshold) {
@@ -35,7 +32,6 @@ export function initNavbarScroll() {
     });
 }
 
-// Active link highlighting
 export function initActiveLinkHighlight() {
     function highlightNavLink() {
         const scrollY = window.pageYOffset;
@@ -56,7 +52,6 @@ export function initActiveLinkHighlight() {
     window.addEventListener('scroll', highlightNavLink);
 }
 
-// Smooth scroll
 export function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

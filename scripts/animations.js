@@ -1,6 +1,5 @@
 import { CONFIG } from './config.js';
 
-// Animate number counting
 function animateNumber(element) {
     const target = parseInt(element.getAttribute('data-target'));
     const duration = CONFIG.animationDuration;
@@ -20,7 +19,6 @@ function animateNumber(element) {
     updateNumber();
 }
 
-// Intersection Observer for scroll animations
 export function initScrollAnimations() {
     const observerOptions = {
         root: null,
@@ -33,7 +31,6 @@ export function initScrollAnimations() {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
 
-                // Animate skill bars
                 if (entry.target.classList.contains('skill-category')) {
                     const skillBars = entry.target.querySelectorAll('.skill-progress');
                     skillBars.forEach(bar => {
@@ -44,7 +41,6 @@ export function initScrollAnimations() {
                     });
                 }
 
-                // Animate stat numbers
                 if (entry.target.classList.contains('stat-card')) {
                     const statNumber = entry.target.querySelector('.stat-number');
                     if (statNumber && !statNumber.classList.contains('animated')) {
@@ -56,13 +52,11 @@ export function initScrollAnimations() {
         });
     }, observerOptions);
 
-    // Observe elements
     document.querySelectorAll('.skill-category, .stat-card, .project-card, .about-text, .contact-info, .contact-form').forEach(el => {
         el.classList.add('fade-in');
         observer.observe(el);
     });
 
-    // Reset skill bars on load
     document.querySelectorAll('.skill-progress').forEach(bar => {
         bar.style.width = '0';
     });

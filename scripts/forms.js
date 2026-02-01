@@ -1,4 +1,3 @@
-// Contact form handling
 export function initContactForm() {
     const contactForm = document.getElementById('contact-form');
 

@@ -1,32 +1,25 @@
-// Main entry point - imports and initializes all modules
 import { initMobileMenu, initNavbarScroll, initActiveLinkHighlight, initSmoothScroll } from './navigation.js';
 import { initTypingEffect } from './typing.js';
 import { initScrollAnimations } from './animations.js';
 import { initContactForm } from './forms.js';
 import { initProjectCardHover, initParallax } from './effects.js';
 
-// Initialize all modules when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    // Add loaded class to body
     document.body.classList.add('loaded');
 
-    // Navigation
     initMobileMenu();
     initNavbarScroll();
     initActiveLinkHighlight();
     initSmoothScroll();
 
-    // Effects
     initTypingEffect();
     initScrollAnimations();
     initProjectCardHover();
     initParallax();
 
-    // Forms
     initContactForm();
 });
 
-// Console message
 console.log(`
 %c Wassim Mouloud - Data Science Portfolio
 %c Thanks for checking out my code!
